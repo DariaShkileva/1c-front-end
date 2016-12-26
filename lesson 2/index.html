@@ -12,9 +12,35 @@ dictionary == {key:"value"}
 var dict1 = dictionary;
 dict1 == dictionary;
 
-
 consol.log("Привет,Добро Пожаловать :\n\"На курс Веб-Разработки\"");
-</script>
 
+var string = "The quick brown fox quikly jumps over the lazy dog.",
+ modification;
+
+string[0] + string[1];
+
+/*Индекс вхождение*/
+string.indexOf("quick")
+string.indexOf("Quick")
+string.lastIndexOf("quick")
+
+/*Разбиение на массивы по разделителю*/
+var splitted = string.split(" ");
+splitted;
+
+ /*Замена*/
+ modification = string.replace("quick","slow");
+ modification;
+ /*Объединение массивов в строку*/
+ splitted.join("_");
+
+ /*Выделение подстроки*/
+ var start = 17,
+ length = 3;
+ string.substr(start, length);
+ /*Приведение в нижний или верхний регистр*/
+ string.toLowerCase();
+ string.toUpperCase();
+</script>
 </body>
 </html>
